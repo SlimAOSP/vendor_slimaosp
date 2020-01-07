@@ -123,7 +123,7 @@ include vendor/aosp/config/ota.mk
 # GApps
 include vendor/gapps/config.mk
 
-# Pixel Style
-include vendor/pixelstyle/config.mk
+# SlimAOSP Style
+include vendor/slimaospstyle/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
