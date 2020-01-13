@@ -13,14 +13,12 @@ CUSTOM_PLATFORM_VERSION := 10.0
 
 TARGET_PRODUCT_SHORT := $(subst aosp_,,$(CUSTOM_BUILD))
 
-CUSTOM_VERSION := SlimAOSP_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
+CUSTOM_VERSION := SlimAOSP_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)
 CUSTOM_VERSION_PROP := 10
-ROM_FINGERPRINT := SlimAOSP/$(CUSTOM_PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(CUSTOM_BUILD_DATE)
+ROM_FINGERPRINT := xiaomi/jasmine/jasmine_sprout:10/QQ1B.200105.004/QDIMIXM:user/test-keys
 
 CUSTOM_PROPERTIES := \
     org.slimaosp.version=$(CUSTOM_VERSION_PROP) \
-    org.slimaosp.version.display=$(CUSTOM_VERSION) \
     org.slimaosp.build_date=$(CUSTOM_BUILD_DATE) \
     org.slimaosp.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    org.slimaosp.build_type=$(CUSTOM_BUILD_TYPE) \
     org.slimaosp.fingerprint=$(ROM_FINNGRPRINT)
